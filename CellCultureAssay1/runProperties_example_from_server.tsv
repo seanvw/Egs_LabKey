@@ -1,0 +1,19 @@
+ParticipantVisitResolver	"{""stringValue"":""SampleInfo""}"	java.lang.String
+TargetStudy		java.lang.String
+ProcessingLab		java.lang.String
+assayName	CellCulture_Transformed	java.lang.String
+baseUrl	https://lks-trial-sean-1.trial.labkey.host	java.lang.String
+protocolId	16	java.lang.String
+workingDir	/labkey/labkey/files/Tutorials/Assay Tutorial/@scripts/TransformAndValidationFiles/AssayId_16/work-1	java.lang.String
+assayId		java.lang.String
+assayType	General	java.lang.String
+containerPath	/Tutorials/Assay Tutorial	java.lang.String
+userName	seanvw@gmail.com	java.lang.String
+runComments		java.lang.String
+protocolDescription		java.lang.String
+protocolLsid	urn:lsid:labkey.com:GeneralAssayProtocol.Folder-15:2	java.lang.String
+runDataUploadedFile	/labkey/labkey/files/Tutorials/Assay Tutorial/@files/assaydata/.uploadTemp/91a8d7c9-fd59-103c-8e84-74e29d102827/CellCulture_002.xls
+runDataFile	/labkey/labkey/files/Tutorials/Assay Tutorial/@scripts/TransformAndValidationFiles/AssayId_16/work-1/runDataFile.tsv	AssayRunTSVData	/labkey/labkey/files/Tutorials/Assay Tutorial/@files/assaydata/CellCulture_Transformed-2024-05-26-025017-302.tsv
+errorsFile	/labkey/labkey/files/Tutorials/Assay Tutorial/@scripts/TransformAndValidationFiles/AssayId_16/work-1/validationErrors.tsv
+transformedRunPropertiesFile	/labkey/labkey/files/Tutorials/Assay Tutorial/@scripts/TransformAndValidationFiles/AssayId_16/work-1/transformedRunProperties.tsv
+severityLevel	WARN
