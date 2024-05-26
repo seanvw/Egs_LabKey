@@ -1,0 +1,14 @@
+ProcessingLab	demo value	java.lang.String
+assayName	CellCulture_Transformed	java.lang.String
+baseUrl	https://lks-trial-sean-1.trial.labkey.host	java.lang.String
+protocolId	16	java.lang.String
+workingDir	/labkey/tomcat-tmp/QCSampleData/65	java.lang.String
+assayId	sample upload name	java.lang.String
+assayType	General	java.lang.String
+containerPath	/Tutorials/Assay Tutorial	java.lang.String
+userName	seanvw@gmail.com	java.lang.String
+runComments	sample upload comments	java.lang.String
+protocolDescription		java.lang.String
+protocolLsid	urn:lsid:labkey.com:GeneralAssayProtocol.Folder-15:2	java.lang.String
+runDataFile	/labkey/tomcat-tmp/QCSampleData/65/runData.tsv
+errorsFile	/labkey/tomcat-tmp/QCSampleData/65/validationErrors.tsv
