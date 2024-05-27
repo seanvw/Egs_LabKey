@@ -1,0 +1,19 @@
+Files and doco on a mechanism for the development of a transform script outside of the server 
+# URL assay data	https://www.labkey.org/Documentation/wiki-page.view?name=assayTutorial
+# URL tranformation	https://www.labkey.org/Documentation/wiki-page.view?name=transformWorkflow
+File	Description
+CellCulture_001.xls	Assay Data 
+CellCulture_002.xls	ditto
+CellCulture_003.xls	ditto
+CellCulture_004.xls	ditto
+CellCulture_005.xls	ditto
+CellCulture_006.xls	ditto
+CellCulture_Transform.pl	the original perl script from LabKey doco
+CellCulture_Transform_SW.pl	my optimised for development perl script
+CellCulture_Transform_broke.pl	a broken script for testing server behaviour with data that does not fit the assay definition
+MANIFEST.txt	this file - TSV format
+runDataFile.tsv	the data from CellCulture_001.xls as TSV with ISO 8601 date time format; used gSheet to convert xls to TSV specifying the ISO 8601 format manually
+runDataFile_out.tsv	the results file from applying CellCulture_Transform_SW.pl with $run_local = 1 setting
+runProperties_example_from_server.tsv	the runProperties.tsv extracted from the server (it has additional columns)
+sampleQCData	the unzipped folder extracted from the server; contains the runData.tsv and runProperties.tsv downloaded from the server
+sampleQCData.zip	the zipped version of the above
