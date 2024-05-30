@@ -51,8 +51,12 @@ sub print_info_files {
 sub process_files {
 
 	my %files = @_;
-	my $monthDay = 0;
-
+	my @month = qw/Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec/;
+	my %months;
+	foreach my $m (1..12){
+		$months{ $m } = $month[$m - 1];
+	}
+	
 	while (my ($key, $value) = each(%files)) {
 
     	open my $dataFile, $key or die "Can't open '$key': $!";
@@ -60,12 +64,14 @@ sub process_files {
     	
   		# header line
     	my $header2=<$dataFile>;
-    	my $expected_header2 = join("\t",qw/Year Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec J-D D-N DJF MAM JJA SON/) . "\n";
+    	my $expected_header2 = join("\t",'Year', @month, qw/J-D D-N DJF MAM JJA SON/) . "\n";
     	unless ($header2 eq $expected_header2 ){
     		die "Header row 2:\n$header2\n does not match:\n" . $expected_header2 . "\n";
     	}
     	
-    	my @header_new = qw/Year Month Date Anomoly_Celcius/;
+    	
+    	# _t is text
+    	my @header_new = qw/Year_s Year_i Month_s Month_i MonthName_s DateTime_dt Anomoly_Celcius_f/;
     	my $header_new = join("\t",@header_new) . "\n";
     	print $transformFile  $header_new;
     	while (my $line=<$dataFile>){
@@ -76,9 +82,9 @@ sub process_files {
 			foreach my $j (1..12){
 				my $month = $j;
 				$month = "0" . $month if length($month) == 1;
-				my $date = "$year-$month-01";
+				my $date_time = "$year-$month-01";
 				my $anomoly = $d[$j];
-				$d = join("\t",($year,$j,$date,$anomoly));
+				$d = join("\t",($year,$year,$j,$j,$months{$j},$date_time,$anomoly));
 				if ($anomoly){
 					print $transformFile "$d\n";	
 				}
