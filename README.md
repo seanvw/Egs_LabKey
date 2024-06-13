@@ -1,4 +1,4 @@
 # Egs_LabKey
 
-Files for some examples
+Files and code used for testing and evaluation
 
