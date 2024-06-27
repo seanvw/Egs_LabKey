@@ -1,7 +1,6 @@
 # Egs_LabKey
 
-Files and code used for testing and evaluation
-
+Files and code used for testing and evaluation of [ LabKey ](https://www.labkey.com/)
 
 <img width="1367" alt="LabKey1" src="https://github.com/seanvw/Egs_LabKey/assets/18576156/90283631-d692-4a1a-8194-64953faaa3f7">
 
